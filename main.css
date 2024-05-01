@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #014E56;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 73px;
+}
+.header__logo:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
+}
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.header__list__item {
+    color: rgb(255, 255, 255);
+    font-family: 'Livvic';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.header__list__item:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.3);
+}
+.header__list__link{
+    color: rgb(255, 255, 255);
+font-family: "Livvic";
+font-size: 18px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+}
+.header__btn {
+    border: 2px solid #ffffff;
+    border-radius: 24px;
+    background-color: transparent;
+    width: 153px;
+    height: 48px;
+}
+.header__btn:hover {
+    border-radius: 24px;
+    background: #012f34;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.01);
+}
+.header__burger__btn {
+    display: none;
+    background-image: url("./images/line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 28px;
+    height: 17px;
+    border: none;
+    background-color: transparent;
+}
+.header__burger__btn--active {
+    background-color: #ba4270;
+    max-width: 1000px;
+    height: 100px;
+    content: attr("button");
+} 
+@media only screen and (max-width: 660px) {
+    .header__list {
+        display: none;
+    }
+    .header__burger__btn {
+        display: block;
+    }
+}
+
+
+.website_main{
+    background: rgb(1, 78, 86);
+    
+}
+.main__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_title{
+    color: rgb(255, 255, 255);
+    font-family: "Livvic";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.main__text{
+    color: rgb(255, 255, 255);
+    font-family: "Livvic";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 730px;
+    height: 112px;
+}
+.hero{
+    background: rgb(0, 64, 71);
+    padding: 41px;
+}
+.hero_title{
+    color: rgb(255, 255, 255);
+    font-family: "Livvic";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    padding: 32px;
+}
+
+.hero_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero_img{
+    justify-content: center;
+    align-items: center;
+}
+.hero_textbox{
+    width: 302px;
+    height: 25px;
+    text-align: center;
+}
+
+
+
+.clients{
+    background: rgb(1, 47, 52);
+    
+}
+.clients_title{
+    color: rgb(255, 255, 255);
+    font-family: "Livvic";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    padding: 56px;
+}
+
+.clients_box{
+    padding: 30px;
+  }
+
+.clients_img{
+    width: 165px;
+    height: 22.79px;
+    margin-left: 80px;
+    
+}
+
+.workwith{
+    background: rgb(246, 126, 126);
+    padding: 76px;
+}
+.workwith_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.workwith_text{
+    color: rgb(1, 47, 52);
+    font-family: "Livvic";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+}
+.workwith_btn{
+    width: 153px;
+    height: 48px;
+    box-sizing: border-box;
+    border: 2px solid rgb(1, 47, 52);
+    border-radius: 24px;
+    background-color: transparent;
+    color: rgb(1, 47, 52);
+    font-family: "Livvic";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.workwith_btn:hover{
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.website_footer{
+    padding: 48px;
+    background: rgb(0, 37, 41);
+}
+.footer_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.website_footer img{
+    margin-left: 16px;
+}
+
+
+
+@media only screen and (max-width: 769px){
+    .main__box{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero_img{
+        width: 281px;
+        height: 253px;
+    }
+}
+@media only screen and (max-width: 376px){
+    
+    
+
+    .workwith_box{
+        flex-wrap: wrap;
+    }
+    .footer_box{
+        flex-wrap: wrap;
+    }
+    .main-textbox{
+        flex-wrap: wrap;
+    }
+    
+    .website_main{
+        background: rgb(1, 78, 86);
+    }
+    .container{
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main_title{
+        color: rgb(255, 255, 255);
+        font-family: "Livvic";
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .main__text{
+        color: rgb(255, 255, 255);
+        font-family: "Livvic";
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: center;
+        width: 327px;
+        height: 196px;
+    }
+    .hero_cards{
+        flex-wrap: wrap;
+    }
+}
